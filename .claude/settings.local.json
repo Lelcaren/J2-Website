@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://images.squarespace-cdn.com/content/v1/62c331f8b503a23ea69f3672/d1c3fae4-292b-491d-87ef-350c4a6adb9b/11.png\" -o \"C:/Users/onyan/AppData/Local/Temp/legacyVentures.webp\")",
+      "Bash(curl -s \"https://images.squarespace-cdn.com/content/v1/62c331f8b503a23ea69f3672/f8773ffb-7741-4077-ad89-79e448943514/222.png\" -o \"C:/Users/onyan/AppData/Local/Temp/northCapital.webp\")",
+      "Bash(curl -s \"https://images.squarespace-cdn.com/content/v1/62c331f8b503a23ea69f3672/52c3033c-f5eb-4c9e-9a73-627ca3e23af7/Modop.png\" -o \"C:/Users/onyan/AppData/Local/Temp/modop.webp\")",
+      "Bash(curl -s \"https://images.squarespace-cdn.com/content/v1/62c331f8b503a23ea69f3672/a1f86a4f-85d4-473c-a97d-3368299f2b06/Untitled+design+%2811%29.png\" -o \"C:/Users/onyan/AppData/Local/Temp/boyneCapital.webp\")",
+      "WebFetch(domain:www.j2advisorygroup.com)",
+      "WebFetch(domain:www.leespring.com)",
+      "WebFetch(domain:www.stratoscope.com)",
+      "WebFetch(domain:jmsip.com)"
+    ]
+  }
+}

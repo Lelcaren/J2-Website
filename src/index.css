@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #1B2A6B;
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 35s linear infinite;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(28px) scale(0.88);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(36px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .client-card {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .client-card.visible {
+    animation: fadeInUp 0.55s ease forwards;
+  }
+
+  .clients-grid:hover .client-card {
+    opacity: 0.25;
+    transform: scale(0.88);
+  }
+
+  .clients-grid:hover .client-card:hover {
+    opacity: 1 !important;
+    transform: scale(1.15) !important;
+    z-index: 10;
+    position: relative;
+  }
+}
